@@ -49,6 +49,6 @@ main {
     font-family: 'inter', sans-serif;
 }
 
-.Seccion1_contenedorEncriptar_Caja ::placeholder {
+.Seccion1_contenedorEncriptar_Caja::placeholder {
     color: #0A3871;
 }
