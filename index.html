@@ -2,23 +2,24 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style.css">
+    <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
+    <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <title>Challenge Encriptador</title>
 </head>
 <body>
     <header>
         <img class="logo" src="Links/Logo.svg" alt="logo">
-
     </header>
     <main>
         <section class="Seccion1">
             <div class="Seccion1_contenedorEncriptar">
-                <textarea class="Seccion1_contenedorEncriptar_Caja" placeholder="Ingrese el texto aquí"></textarea>
+                <textarea placeholder="Ingrese el texto aquí" class="Seccion1_contenedorEncriptar_Caja" ></textarea>
             </div>
-            <div>
-                <img class="Seccion1_contenedorEncriptar_Alerta" src="Links/alerta.svg" alt="Icono Alerta">
+            <div class="Seccion1_contenedorEncriptar_Alerta">
+                <img src="Links/alerta.svg" alt="Icono Alerta">
                 <p>Solo letras minúsculas y sin acentos</p>
             </div>
             <div class="Seccion1_contenedorEncriptar_Botones">
@@ -32,21 +33,17 @@
                 <img src="Links/Muñeco.svg" alt="Imagen de persona resolviendo un acertijo">
             </div>
             <div class="Seccion2_Texto">
-                <h3>Ningún mensaje fue encontrado</h3>
-                <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+                <h3 class="Seccion2_Texto_h3">Ningún mensaje fue encontrado</h3>
+                <p class="Seccion2_Texto_p">Ingresa el texto que desees encriptar o desencriptar.</p>
             </div>
             <div class="Seccion2_ContenedorBotonCopiar">
                 <input class="Seccion2_ContenedorBotonCopiar_Boton" type="button" value="Copiar">
             </div>
-            <div>
-                <p class="Seccion2_Resultado"></p>
+            <div class="Seccion2_contenedor_resultado">
+                <p class="Seccion2_contenedor_resultado_p"></p>
             </div>
         </section>
-        </section>
-
     </main>
-    <footer>
-        <p>Erick Leonardo Moreno</p>
-    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
